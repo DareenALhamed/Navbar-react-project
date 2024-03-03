@@ -112,10 +112,10 @@ function Navbar() {
       </ul>
 
       <div className="products">
-        {products.map((p) => (
-          <div className="product" key={p.id}>
-            <h2> {p.name}</h2>
-            <img src={p.image.secure_url} alt={p.name} variant="top" />
+        {products.map((product) => (
+          <div className="product" key={product.id}>
+            
+            <img src={product.image.secure_url} alt={product.name} variant="top" />
           </div>
         ))}
       </div>
